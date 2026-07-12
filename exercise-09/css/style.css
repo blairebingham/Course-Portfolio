@@ -15,6 +15,7 @@ body {
   align-items: flex-start;
   min-height: 100vh;
   padding: 32px 0;
+  padding-top: 80px; 
 }
 
 main {
@@ -94,13 +95,13 @@ code {
   padding: 8px 16px;
   color: #0066CC;
   text-decoration: none;
-  background-color: #fafafa;
+  background-color: rgb(109, 194, 85);
   border: 1px solid rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-simple a:hover {
-  background-color: #0066CC;
+  background-color: #e17a26;
   color: #ffffff;
 }
 
@@ -113,9 +114,9 @@ code {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #333333;
+  background-color: #1b10ad;
   padding: 0 32px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(190, 44, 159, 0.1);
   z-index: 1000;
 }
 
@@ -134,28 +135,54 @@ code {
 .nav-horizontal a {
   display: block;
   padding: 16px 0;
-  color: #ffffff;
+  color: #dfd741;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-horizontal a:hover {
-  color: #0066CC;
+  color: #cc007e;
 }
 
 .nav-horizontal+main {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-center {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(205, 32, 139);
+  padding: 0 20px;
+  box-shadow: 0 2px 4px hsla(279, 77%, 48%, 0.102);
+  z-index: 1000;
+}
 
-.nav-custom ul {}
+.nav-center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
 
-.nav-custom li {}
+.nav-center li {
+  margin-bottom: 0;
+}
 
-.nav-custom a {}
+.nav-center a {
+  display: block;
+  padding: 16px 0;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-.nav-custom a:hover {}
+.nav-center a:hover {
+  color: #0066CC;
+}
 
 @media (width >=480px) {}
 
